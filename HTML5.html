@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 120px;
+      color: #202020;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      border: 7px solid rgb(156, 156, 156);
+      background-color: rgb(41, 41, 41);
+      padding: 20px;
+    }
+    .box {
+      width: 23%;
+      height: 0;
+      padding-bottom: 23%;
+      margin: 1%;
+      border: 1px solid black;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .box h3 {
+      margin: 0;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .box p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h3 style="color: orange; font-size:34px;">
+      Create a Sticky Note Effect in 5 Easy Steps With CSS3 and HTML5 
+    </h3>
+  </center>
+  <hr style="height: 2px; background-color: rgb(200, 200, 200); border: none;">
+  <p>
+    by <a href="https://tutsplus.com/authors/christian-heilmann">Chris Heilmann</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27 Jan 2021
+    <br><br>
+    <span style="color:grey;">Difficult</span>:<i>Intermediate</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey;">length</span>:<i>Medium</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Languages:              
+    <select name="bahasa">
+      <option value="ind">indonesian</option>
+      <option value="eng">english</option>
+      <option value="india">indian</option>
+  </select>
+  <hr style="height: 2px; background-color: rgb(200, 200, 200); border: none;">
+  </p>
+  <div class="container">
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #1</h3>
+      <p>Text Content #1</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #2</h3>
+      <p>Text Content #2</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #3</h3>
+      <p>Text Content #3</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #4</h3>
+      <p>Text Content #4</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #5</h3>
+      <p>Text Content #5</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #6</h3>
+      <p>Text Content #6</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #7</h3>
+      <p>Text Content #7</p>
+    </div>
+    <div class="box" style="background-color: rgb(255, 255, 136);">
+      <h3>Title #8</h3>
+      <p>Text Content #8</p>
+    </div>
+  </div>
+  <p style="font-size:18px;">
+    In this tutorial, you'll learn how to transform an HTML list into a wall of "sticky 
+    notes" that look and work like the following:
+    <br>
+    The effect is built up gradually and works on all up-to-date browsers like 
+    Chrome, Safari, Firefox, and Opera. Older browsers simply get some yellow 
+    squares. 
+    <ol>
+      <li>Step 1: The HTML and Basic Squares 
+        <br>
+        <p>
+          We will be using some common CSS properties that work across all 
+          browsers. As we are using HTML5 for the effect, the basic HTML of our 
+          sticky notes is an unordered list with a link containing all the other 
+        </p>
+      </li>
+      <li>Step 2: Drop Shadows and Scribbly Font 
+        <br>
+        <p>
+          Now it's time to add a drop shadow to the notes to make them stand out and 
+          to use a scribbly, hand-written font as the note font. For this we use <a href="https://fonts.google.com/">Google
+          Fonts</a> and the fonts they provide us with, called "Reenie Beanie" and "Lato". 
+        </p>
+      </li>
+      <li>Step 3: Tilting the Notes 
+        <br>
+        <p>
+          Both the tilting of the notes and the zooming we'll add in the next step were 
+          already explained in the past, <a href="https://www.zurb.com/playground/css3-polaroids">in this article by Zurb</a>. So big thanks to them 
+          for publishing this trick. 
+          <br><br>
+          In order to tilt an element, you use the transform:rotate property of CSS3, 
+          again adding the prefix for each of the browsers: 
+        </p>
+      </li>
+    </ol>
+  </p>
+  <hr style="height: 2px; background-color: rgb(0, 0, 0); border: none;">
+  <img src="berita.png" width="100%">
+  <p>
+    Apple never showed intentions of racing the <b><u>Nexus 7</u></b> to the bottom in the tablet game, and the 
+    <b><i>iPhone 5c</i></b> is proof that it won't do that in the phone arena, either. 
+  </p>
+  <p style="font-size:10px;">
+    <i>Infographic by Troy Dunham for Engadget </i>
+  </p>
+  <p>
+    Kebudayaan Indonesia yang multikultur seperti itu, ketika dikaji dari sisi dimensi waktu, dapat 
+    dibagi pula pengertiannya : 
+    <ol type="a">
+      <li>Pertama, kebudayaan (Indonesia) adalah kebudayaan yang sudah terbentuk.</li>
+      <li>Kedua, kebudayaan (Indonesia) adalah kebudayaan yang sedang membentuk.  </li>
+      <li>Ketiga, adalah kebudayaan (Indonesia) adalah kebudayaan yang direncanakan untuk 
+          dibentuk 
+      </li>
+    </ol>
+  </p>
+  <ol type="A"><a href="https://ruangarsitek.id/cara-membuat-denah-rumah/#6_Berikan_Detail_Denah_Rumah_dan_Mulai_Penataan_Perabot_pada_Denah_Rumah" style="color:red; text-decoration:none;">10 Cara Membuat Denah Rumah Minimalis
+    <ol>
+      <li>Karakteristik Membuat Denah Rumah yang Ideal </li>
+      <li>Memilih Model Rumah (Jumlah Lantai) </li>
+      <li>Mengumpulkan Inspirasi dan Referensi </li>
+      <li>Buat Program Ruang untuk Denah Rumah </li>
+      <li>Mulai Membuat Sketsa Denah Rumah dengan Garis </li>
+      <li>Berikan Detail Denah Rumah dan Mulai Penataan Perabot pada Denah Rumah </li>
+      <li>Lakukan Uji Coba dan Buat Altenatif Denah Rumah </li>
+      <li>Evaluasi Kembali Denah Rumah yang Telah Kamu Buat </li>
+      <li>Alternatif Denah Rumah Terbaik </li>
+      <li>Membuat Denah dengan Aplikasi Autocad </li>
+    </ol></a>
+  </ol></a>
+
+  <ol type="A"><a href="https://ruangarsitek.id/cara-membuat-denah-rumah/#2_Menentukan_Jumlah_Ruangan" style="color:red; text-decoration:none;">Langkah-Langkah Membuat Denah Rumah 
+    <ol>
+      <li>Membuat Daftar Aktivitas</li>
+      <li>Menentukan Jumlah Ruangan</li>
+      <li>Mengkur Lahan</li>
+      <li>Mulai Membuat Denah Dasar </li>
+      <li>Menggambar Secara Spesifik Jendela dan Pintu </li>
+      <li>Memberi Nama Setiap Ruangan </li>
+      <li>Menggambar Furnitur Sesuai Letaknya </li>
+    </ol></a>
+  </ol></a>
+  <br><br>
+  <table border="0" width="50%">
+    <tr>
+      <td colspan="3" bgcolor="green" style="color:white; text-align:center;">FEEDBACK</td>
+    </tr>
+    <tr>
+      <td bgcolor="orange">Nama</td>
+      <td>:</td>
+      <td><input type="text" name="nama" id="nama"></td>
+    </tr>
+    <tr>
+      <td bgcolor="blue">Email</td>
+      <td>:</td>
+      <td><input type="text" name="email" id="email"></td>
+    </tr>
+    <tr>
+      <td bgcolor="grey">Jenis Kelamin</td>
+      <td>:</td>
+      <td>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+        <br>
+        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="green">Golongan</td>
+      <td>:</td>
+      <td>
+        <select name="golongan">
+          <option value="1">O+</option>
+          <option value="2">O-</option>
+          <option value="3">A</option>
+          <option value="4">B</option>
+          <option value="5">B+</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="green">Kemampuan</td>
+      <td>:</td>
+      <td rowspan="2">
+        <input type="checkbox" name="hobi" value="bahasa">bahasa
+        <input type="checkbox" name="hobi" value="olahraga">olahraga
+        <br>
+        <input type="checkbox" name="hobi" value="fisik">fisik
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hobi" value="agama">agama
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td bgcolor="darkgrey">Testimoni</td>
+      <td>:</td>
+      <td bgcolor="black"><textarea name="testi" id="testi" rows="3" cols="20" id=""></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><button type="submit">Submit</button></td>
+    </tr>
+  </table>
+  <br><br>
+  <table border="1" width="50%">
+    <tr>
+      <td rowspan="2"; style="text-align:center;"; bgcolor="lightyellow"><b>JANUARI</b></td>
+      <td style="text-align:center;"; bgcolor="darkorange"><b>TOTAL</b></td>
+      <td rowspan="2"; style="text-align:center;"; bgcolor="lightyellow"><b>FEBRUARI</b></td>
+      <td style="text-align:center;"; bgcolor="darkorange"><b>TOTAL</b></td>
+      <td colspan="2"style="text-align:center;"; bgcolor="darkgreen" ;colspan="2"><b>KELUAR</b></td>
+      <td rowspan="2" ; style="text-align:center; color:white;" bgcolor="black"><b>TOTAL</b></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;"><b>MASUK</b></td>
+      <td style="text-align:center;"><b>MASUK</b></td>
+      <td style="text-align:center;" ; bgcolor="darkgrey"><b>JANUARI</b></td>
+      <td style="text-align:center;" ; bgcolor="orange"><b>FEBRUARI</b></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="5"; style="text-align:center;"><b>Sub Total 1</b></td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="5"; style="text-align:center;"><b>Sub Total 1</b></td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="6"; style="text-align:center; color:white;"; bgcolor="black";><b>TOTAL</b></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</body>
+</html></div>
